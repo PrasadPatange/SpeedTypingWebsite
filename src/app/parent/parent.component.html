@@ -1,0 +1,62 @@
+<!-- **********PARENT COMPONENT************** -->
+
+
+
+<div class="container mt-5 mb-5">
+    <div class="border shadow p-3 mb-5 bg  mb-5">
+     <h1 class="text-center shadow p-3 mb-5  card-header">Welcome To Typing Speed Test</h1>
+     <div class="row">
+
+   <!-- ******Timmer******** -->
+
+   <app-timmer [timmer]="timeLeft" ></app-timmer>
+
+   <!-- <div id="coutdowm" class="shadow bg round ms-3">
+     <p id="coutdowm-position">{{timeLeft}}</p>
+    </div> -->
+
+    <!-- **************Result ****************** -->
+    <div>
+      <app-result [result]="words" ></app-result>
+    </div>
+    
+    <!-- *************DisplayBox************* -->
+    
+  
+
+      <div class="mx-auto mt-3 mb-3">
+          <p [innerHTML]="wordColor()" class="form-control"  [(ngModel)]="displayText" ngDefaultControl  [ngModelOptions]="{standalone: true}"  id="dispBox" cols="100" rows="10">
+            {{InputText}}
+          </p>
+          <!-- <p [innerHTML]="wordColor()" class="form-control" [(ngModel)]="InputText"   id="dispBox" cols="100" rows="10">
+            {{InputText}}
+          </p> -->
+          
+          <!-- <p innerHTML="{{ InputText | highlight : 'search'}}"[(ngModel)]="displayText" [ngModelOptions]="{standalone: true}" ngDefaultControl class="form-control"   id="dispBox" cols="100" rows="10" >
+            {{InputText}}
+            [(ngModel)]="displayText" [ngModelOptions]="{standalone: true}" ngDefaultControl 
+          </p> -->
+
+       </div> 
+
+      <!-- [innerHTML]="wordColor()" [(ngModel)]="displayText" [ngModelOptions]="{standalone: true}"  --> 
+      <!--  [(ngModel)]="displayText" [ngModelOptions]="{standalone: true}" -->
+      <!-- ngDefaultControl - Third Party requried ControlValueAccessor-->
+
+<br>    
+<br>
+     <!-- ******************Input Box********************** -->
+ 
+ <div class="row">
+     <div class=" mx-auto text-center">
+       <textarea class="form-control"  (keydown)="wordCounter()"  #Intext   [disabled]=" (timeLeft == 0) "  id="textBox" cols="100" rows="3" placeholder="Enter Above text..."></textarea>
+       
+       <button type="submit" (click)="DataSend()" class="btn btn-secondary btn-lg mt-3 ms-5">Start</button>
+
+
+       <!-- <button type="button" (click)="result()" [disabled]="!(timeLeft == 0)" class="btn btn-warning btn-lg mt-3 ms-2">Result</button> -->
+ 
+    
+     </div>
+   
+   </div>

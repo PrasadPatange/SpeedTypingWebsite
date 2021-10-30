@@ -1,0 +1,70 @@
+
+.bg{
+    background-color: lightgray;
+    border-radius: 20px;
+}
+.card-header {
+    color: yellow;
+    background-color: navy;
+    border-radius: 50px;
+    
+    
+}
+#textBox{
+    background-color: lightskyblue;
+    color: black;
+    border-radius: 20px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+    border-style: solid;
+    border-color: grey;
+}
+
+#dispBox{
+    height:100px;
+    width: 98%;
+    font-weight: bold;
+    /* color: yellowgreen; */
+    color: black;
+    font-size: 20px;
+    font-family: "Roboto";
+    /* background-color:black;  */
+    border-radius: 20px ;
+    text-align: center;
+}
+
+
+/* #coutdowm {
+    height:40px;
+    width:90px;
+    background-color: black;
+    color: yellow;
+    border-color: yellow;
+    border-style: solid;
+    border-radius: 100px;
+    text-align: center;
+    
+}
+#coutdowm-position{
+    padding: 5px;
+    font-size:large;
+    font-family: "Roboto";
+} */
+.btn{
+    font-family: "Roboto";
+    /* border-radius: 20px; */
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+
+.highlightText {
+   background-color: red;
+}
+
+ .highlight-search-text {
+    color: black;
+    font-weight: 600;
+  } 

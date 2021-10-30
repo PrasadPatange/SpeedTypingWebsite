@@ -1,0 +1,18 @@
+
+#coutdowm {
+    height:40px;
+    width:90px;
+    background-color: black;
+    color: yellow;
+    border-color: yellow;
+    border-style: solid;
+    border-radius: 100px;
+    text-align: center;
+    
+}
+#coutdowm-position{
+    padding: 5px;
+    font-size:large;
+    font-family: "Roboto";
+}
+

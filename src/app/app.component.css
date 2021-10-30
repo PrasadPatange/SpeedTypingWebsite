@@ -1,0 +1,23 @@
+.round{
+    border-radius: 50px;
+}
+/* .card-header {
+    color: yellow;
+    background-color: navy;
+    
+    
+} */
+#heading{
+    
+    color: midnightblue;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+.bg{
+    background-color: lightgray;
+}
+
+.highlight-search-text {
+    color: black;
+    font-weight: 600;
+  }
